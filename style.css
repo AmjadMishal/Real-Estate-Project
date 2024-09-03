@@ -281,7 +281,6 @@ color:#0084ff;
     }
     .social-share{
         gap: 0px;
-        justify-content: center;
     }
 }
 @media(max-width:270px){

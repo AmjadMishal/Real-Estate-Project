@@ -641,7 +641,7 @@ color:#0084ff;
     align-items: center;
     transform-style: preserve-3d;
     z-index: -1;
-    background-color: #0054BA85;
+    background-color: #0054ba4f;
     gap: 1rem;
 }
 .bos-sub-1{
@@ -666,6 +666,11 @@ color:#0084ff;
     .bos-buttons{
         width: 180px;
         flex-basis: 0px!important;
+    }
+}
+@media (max-width:420px){
+    .bos-para{
+        font-size: 1.5rem!important;
     }
 }
 @media (max-width:320px){

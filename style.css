@@ -5,10 +5,10 @@
     text-decoration: none;
     list-style: none;
 }
-html, body {
+/* body {
     max-width: 100%;
     overflow: hidden;
-}
+} */
 .partner-container{
     width: 100%;
     position: relative;
@@ -926,7 +926,14 @@ background-color: #7170707b;
 
 }
 .sidebar li{ 
-padding: 1.15rem;
+padding-left: 1.17rem;
+height: 62px;
+display: flex;
+}
+.sidebar li a{
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 .sidebar .close{
  padding:0.3rem;
@@ -946,9 +953,7 @@ display: none;
 background-color: #444444;
 cursor: pointer;
 }
-.close{
-margin-bottom: 13px;
-}
+
 .carousel-control-next,.carousel-control-prev{
 width: auto;
 padding: 20px;

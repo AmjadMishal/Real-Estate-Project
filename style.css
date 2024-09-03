@@ -5,6 +5,10 @@
     text-decoration: none;
     list-style: none;
 }
+html, body {
+    max-width: 100%;
+    overflow: hidden;
+}
 .partner-container{
     width: 100%;
     position: relative;
@@ -54,7 +58,7 @@
 .footer-container{
     margin:0rem 5rem 4rem;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .logo-text-footer{
@@ -637,7 +641,7 @@ color:#0084ff;
     align-items: center;
     transform-style: preserve-3d;
     z-index: -1;
-    background-color: #0054ba3b;
+    background-color: #0054BA85;
     gap: 1rem;
 }
 .bos-sub-1{
@@ -954,7 +958,7 @@ position: absolute;
 width: 500px;
 height: 300px;
 background-color: #ffffff;
-top: 35%;
+top: 45%;
 right: 10%;
 border-radius: 10px;
 display: flex;

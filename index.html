@@ -8,7 +8,7 @@
      <meta name="description" content="Real Homes - The best real estate website for finding properties, partners, and expert advice.">
      <meta name="keywords" content="real estate, properties, homes, partners, expert advice, real estate website">
      <meta name="author" content="Amjad Mishal">
-
+    <!--Link Tags of various files and resources used in project-->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,6 +27,7 @@
 </head>
 <body>
     <div class="wrapper">
+      <!--Navbar-Section-->
     <header>
         <div class="theader">
           <div class="nav-ele-1 nav">
@@ -64,7 +65,7 @@
           </div>
         </div>
         </header>
-        <!-- Slideshow -->
+        <!-- Slideshow-Section -->
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
@@ -443,7 +444,7 @@
                 <div class="forsale-card-sections">
                   <div class="img-card-fs"><img src="./assets/Apartments-488x326.jpg" alt="Property-img" class="forsale-img"></div>
                   <h3 class="forsale-property-head">Building Having 15 Apartments</h3>
-                  <div class="forsale-location-container"><span class="loc-img"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14px" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class="loc-forsale"/></svg></span><a href="" class="forsale-location"> 435 Southwest 12th Avenue, Miami, FL 33130, USA</a></div>
+                  <div class="forsale-location-container"><span class="loc-img"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="14px" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class="loc-forsale"/></svg></span><a href="" class="forsale-location"> 435 Southwest 12th Avenue,Miami,FL 33130,USA</a></div>
                   <span class="added-date">Added:June 6, 2020</span>
                   <div class="property-details-card-fs">
                       <div class="p-c-d-fs">
@@ -609,11 +610,17 @@
         <script>
         function showSidebar(){
           const sidebar = document.querySelector('.sidebar')
-          sidebar.style.display ='flex'
+          const wrapper = document.querySelector('.wrapper')
+          if (sidebar && wrapper) { 
+            wrapper.style.overflowY = 'hidden';
+            sidebar.style.display = 'flex';
+          }
         }
         function hideSidebar(){
           const sidebar = document.querySelector('.sidebar')
-          sidebar.style.display ='none'
+          if (sidebar) { 
+              sidebar.style.display = 'none';
+            }
         }
         </script>
     <!-- Quote Section -->
@@ -622,7 +629,7 @@
           <p>Price is what you pay.</p>
           <p>Vlaue is what you get.</p>
       </div>
-  </secction>
+    </secction>
     <!-- Agents Section -->
      <section class="Agents">
         <div class="Agents-main">

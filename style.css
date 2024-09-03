@@ -5,6 +5,10 @@
     text-decoration: none;
     list-style: none;
 }
+html,body {
+    max-width: 100%;
+    overflow: hidden;
+}
 .partner-container{
     width: 100%;
     position: relative;

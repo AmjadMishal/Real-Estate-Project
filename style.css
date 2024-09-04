@@ -241,7 +241,11 @@ color:#0084ff;
     background-color: #fff;
 }
 /* Media Queiries */
-
+@media (max-width:280px){
+     .property-card{
+        padding-bottom:0px!important;
+     }
+}
 @media (max-width:480px){
     .help-sub-2{
         flex-direction: column;
